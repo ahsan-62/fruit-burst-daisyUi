@@ -37,11 +37,11 @@
       }
     </style>
   </head>
-  <body class="max-w-7xl mx-auto">
+  <body class="mx-auto max-w-7xl">
     <header class="mt-12">
-      <div class="navbar bg-[#ff7a15] rounded-[500px]">
-        <div class="navbar-start hidden lg:flex">
-          <ul class="menu menu-horizontal px-1">
+      <div class="navbar md:bg-[#F85559] lg:bg-[#F85559] rounded-[500px]">
+        <div class="hidden px-2 navbar-start lg:flex">
+          <ul class="px-1 text-lg font-medium text-white menu menu-horizontal">
             <li><a>Home</a></li>
             <li><a>Abou Us</a></li>
             <li><a>Shop</a></li>
@@ -53,7 +53,7 @@
             <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
+                class="w-5 h-5"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -76,17 +76,24 @@
               <li><a>All Fruits</a></li>
             </ul>
           </div>
-          <img src="images/logo.png" alt="" />
-          <a class="btn btn-ghost text-xl">Fruit Burst</a>
+          <div class="flex items-center">
+            <img class="w-12 mr-3" src="images/logo.png" alt="" />
+            <a class="text-4xl font-extrabold lg:text-white">Fruit Burst</a>
+          </div>
         </div>
 
-        <div class="navbar-end">
-          <div class="form-control">
+        <div class="relative hidden pr-4 lg:flex navbar-end">
+          <div class="form-control lg:w-64">
             <input
               type="text"
-              placeholder="Search"
-              class="input input-bordered w-24 md:w-auto"
+              placeholder="Search here"
+              class="rounded-[50px] p-2 md:w-auto"
             />
+            <div class="absolute inset-y-0 flex items-center right-8">
+              <button type="button">
+                <img class="w-4" src="images/search.png" alt="" />
+              </button>
+            </div>
           </div>
         </div>
       </div>
